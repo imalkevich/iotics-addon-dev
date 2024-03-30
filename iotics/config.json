@@ -1,0 +1,27 @@
+{
+  "name": "Iotics",
+  "version": "0.12.3",
+  "slug": "Iotics",
+  "image": "imalkevich/iotics-controller-dev",
+  "description": "A  server-client smart home system",
+  "url": "https://hub.docker.com/u/imalkevich",
+  "webui": "https://[HOST]:[PORT:4443]/",
+  "arch": ["armhf", "armv7", "aarch64", "amd64"],
+  "startup": "system",
+  "init": false,
+  "boot": "auto",
+  "hassio_api": true,
+  "hassio_role": "default",
+  "homeassistant_api": true,
+  "apparmor": true,
+  "map": ["config:rw", "share:rw", "backup:rw", "media:rw"],
+  "options": {},
+  "schema": {},
+  "ports": {
+    "4443/tcp": 4443
+  },
+  "ports_description": {
+    "4443/tcp": "iotics controller"
+  },
+  "host_network": "false"
+}
